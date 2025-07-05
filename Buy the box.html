@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지금 바로 박스를 주문하세요 | Pikoro Market</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Noto+Serif+KR&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f7f2;
+      color: #3a3a3a;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .font-korean {
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: #3a3a3a;
+    }
+
+    .header-title .pikoro {
+      font-weight: 700;
+      font-size: 1.75rem;
+      display: block;
+    }
+
+    .header-title .market {
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+    }
+
+    nav a {
+      font-weight: 600;
+      color: #3a3a3a;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #a8c0d0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="flex items-center justify-between p-6 shadow-md bg-transparent">
+    <div class="header-title">
+      <span class="pikoro">Pikoro</span>
+      <span class="market">MARKET</span>
+    </div>
+    <nav class="space-x-6">
+      <a href="Pikoro.html">홈</a>
+      <a href="store.html" class="text-[#a8c0d0]">지금 바로 박스를 주문하세요</a>
+      <a href="about.html">회사 소개</a>
+      <a href="contact.html">문의</a>
+    </nav>
+  </header>
+
+  <!-- Subscription Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-playfair font-bold text-center mb-10">Choose your plan</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Slideshow -->
+      <div class="rounded-xl overflow-hidden shadow relative h-72 md:h-96">
+        <div class="slideshow relative w-full h-full">
+          <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+            <img src="images/box1.jpg" class="w-full h-full object-cover" alt="Box 1">
+          </div>
+          <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="images/box2.jpg" class="w-full h-full object-cover" alt="Box 2">
+          </div>
+          <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="images/box3.jpg" class="w-full h-full object-cover" alt="Box 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan Options -->
+      <div class="space-y-6">
+        <div class="border rounded-lg p-6 bg-white shadow hover:shadow-lg transition">
+          <h3 class="font-playfair text-xl font-bold mb-2">1 Box Plan</h3>
+          <p class="font-korean text-sm mb-2">처음 시작하는 분들을 위한 단일 박스</p>
+          <p class="text-2xl text-[#a8c0d0] font-bold mb-4">£60</p>
+          <button class="bg-[#a8c0d0] text-[#3a5160] hover:bg-[#8ba4b4] hover:text-white transition px-4 py-2 rounded-lg font-bold">Order Now</button>
+        </div>
+
+        <div class="border rounded-lg p-6 bg-white shadow hover:shadow-lg transition">
+          <h3 class="font-playfair text-xl font-bold mb-2">3 Box Plan (6 Months)</h3>
+          <p class="font-korean text-sm mb-2">6개월 동안 매월 박스를 받으세요</p>
+          <p class="text-2xl text-[#a8c0d0] font-bold mb-4">£55 / box</p>
+          <button class="bg-[#a8c0d0] text-[#3a5160] hover:bg-[#8ba4b4] hover:text-white transition px-4 py-2 rounded-lg font-bold">Order Now</button>
+        </div>
+
+        <div class="border rounded-lg p-6 bg-white shadow hover:shadow-lg transition">
+          <h3 class="font-playfair text-xl font-bold mb-2">6 Box Plan (12 Months)</h3>
+          <p class="font-korean text-sm mb-2">연간 구독으로 최고의 혜택을 누리세요</p>
+          <p class="text-2xl text-[#a8c0d0] font-bold mb-4">£50 / box</p>
+          <button class="bg-[#a8c0d0] text-[#3a5160] hover:bg-[#8ba4b4] hover:text-white transition px-4 py-2 rounded-lg font-bold">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mt-20">
+      <h3 class="text-2xl font-playfair font-bold text-center mb-8">고객님의 피드백</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-lg p-6 shadow text-sm font-korean">
+          “매달 받는 박스가 기대돼요! 너무 만족합니다.”<br><span class="block mt-4 font-semibold">— 지수, London</span>
+        </div>
+        <div class="bg-white border rounded-lg p-6 shadow text-sm font-korean">
+          “6개월 패키지가 딱 좋아요. 구성이 알찹니다.”<br><span class="block mt-4 font-semibold">— 민준, Manchester</span>
+        </div>
+        <div class="bg-white border rounded-lg p-6 shadow text-sm font-korean">
+          “배송도 빠르고 제품 질도 좋아요. 추천합니다.”<br><span class="block mt-4 font-semibold">— 하나, Birmingham</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slideshow Script -->
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let current = 0;
+    setInterval(() => {
+      slides[current].style.opacity = 0;
+      current = (current + 1) % slides.length;
+      slides[current].style.opacity = 1;
+    }, 3000);
+  </script>
+</body>
+
+</html>
