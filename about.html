@@ -1,55 +1,181 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>회사 소개 - Pikoro Market</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Noto+Serif+KR&display=swap" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f7f2;
+      color: #3a3a3a;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .font-korean {
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: #3a3a3a;
+    }
+
+    .header-title .pikoro {
+      font-weight: 700;
+      font-size: 1.75rem;
+      display: block;
+    }
+
+    .header-title .market {
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+    }
+
+    nav a {
+      font-weight: 600;
+      color: #3a3a3a;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #a8c0d0;
+    }
+
+    nav a.active {
+      color: #a8c0d0;
+      font-weight: 700;
+    }
+
+    .parallax-bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
-<body class="bg-[#f8f7f2] text-[#3a3a3a] font-sans">
+
+<body>
+
 <header class="flex items-center justify-between px-8 py-6 max-w-6xl mx-auto">
   <div class="header-title">
-    <span class="font-playfair text-2xl font-bold">Pikoro</span>
-    <span class="text-sm tracking-widest">MARKET</span>
+    <span class="pikoro">Pikoro</span>
+    <span class="market">MARKET</span>
   </div>
   <nav class="space-x-6">
-    <a href="index.html">홈</a>
-    <a href="buy-the-box.html">지금 바로 박스를 주문하세요</a>
-    <a href="about.html" class="text-[#a8c0d0] font-bold">회사 소개</a>
+    <a href="Pikoro.html">홈</a>
+    <a href="store.html">지금 바로 박스를 주문하세요</a>
+    <a href="about.html" class="active">회사 소개</a>
     <a href="contact.html">문의</a>
   </nav>
 </header>
-<section class="h-[90vh] flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1600x900');">
-  <div class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-white px-4">
-    <h1 class="font-playfair text-4xl font-bold mb-4">우리의 이야기</h1>
-    <p class="text-lg font-korean">Pikoro Market가 어떻게 시작되었는지 알아보세요</p>
-  </div>
-</section>
-<section class="py-20 max-w-6xl mx-auto px-6 font-korean">
-  <div class="grid md:grid-cols-2 gap-12">
-    <div>
-      <h2 class="font-playfair text-3xl text-[#3a5160] mb-4">우리 이야기</h2>
-      <p class="text-lg leading-relaxed">2020년 한국에서 시작된 여정은 음식과 문화를 나누는 열정으로 이어졌습니다.</p>
-    </div>
-    <div>
-      <h2 class="font-playfair text-3xl text-[#3a5160] mb-4">시장 경험을 전하다</h2>
-      <p class="text-lg leading-relaxed">우리는 유럽 시장의 매력을 한국에 전하고자 합니다.</p>
-    </div>
-  </div>
-</section>
-<footer class="bg-[#3a5160] text-[#f8f7f2] py-10 px-6">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    <div><h4 class="font-playfair font-bold mb-3">Pikoro Market</h4><p>현지 장인 음식으로 영국을 경험해보세요.</p></div>
-    <div><h4 class="font-playfair font-bold mb-3">Company</h4><ul><li><a href="about.html">회사 소개</a></li><li><a href="#">채용</a></li></ul></div>
-    <div><h4 class="font-playfair font-bold mb-3">Help</h4><ul><li><a href="#">FAQ</a></li><li><a href="#">배송</a></li></ul></div>
-    <div><h4 class="font-playfair font-bold mb-3">Follow Us</h4><div><a href="#">Instagram</a><br><a href="#">Facebook</a></div></div>
-  </div>
-</footer>
-</body>
-</html>
 
+  <!-- Hero Section with Parallax -->
+  <section class="relative h-[90vh] w-full parallax-bg" style="background-image: url('https://via.placeholder.com/1600x900');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <h1 class="font-playfair text-4xl md:text-5xl font-bold mb-4">우리의 이야기</h1>
+      <p class="text-lg font-korean">Pikoro Market가 어떻게 시작되었는지 알아보세요</p>
+    </div>
+  </section>
+
+  <!-- Content Section 1 -->
+  <section class="py-20 bg-[#f8f7f2]">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+      <div class="md:col-start-2 text-right font-korean">
+        <h2 class="font-playfair text-3xl text-[#3a5160] mb-4">우리 이야기</h2>
+        <p class="text-lg leading-relaxed">
+          우리의 여정은 2020년에 시작되었습니다. 제가 교사로 일하기 위해 한국으로 이주했을 때였습니다. 한국의 풍부한 전통, 활기찬 거리 문화, 그리고 깊은 공동체 의식에 매료되어 저는 빠르게 한국 문화에 반하게 되었습니다. <br><br>
+          그곳에서 저는 현지인들과 전 세계에서 온 다른 교사들과 가까운 우정을 쌓았고, 우리는 종종 서로의 고향 요리를 만들고 이야기를 나누며 식탁에 둘러앉아 문화를 음식으로 나누는 기쁨을 발견하곤 했습니다.<br><br>
+          음식은 다리를 놓고 공동체를 만드는 방식이 되었고, 2023년 영국으로 돌아온 이후에도 이 열정은 계속되어야 한다는 것을 깨달았습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 2 -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-left font-korean">
+        <h2 class="font-playfair text-3xl text-[#3a5160] mb-4">한국에 시장의 경험을 전하다</h2>
+        <p class="text-lg leading-relaxed">
+          영국으로 돌아온 저는 유럽의 일요일 시장들이 지닌 독특한 매력을 다시 느낄 수 있었습니다. 활기찬 가판대, 지역 생산자들, 그리고 새로운 무언가를 발견하는 기쁨.<br><br>
+          “이러한 현지의 진짜 시장 경험을 한국에도 전할 수 있다면 어떨까?”<br>
+          “신선하고 품질 높은 음식과 문화적 호기심이 만나는 공간을 만들 수 있다면?”<br><br>
+          이것이 바로 우리가 하는 일의 중심입니다.<br>
+          음식을 통해 문화를 나누고, 의미 있는 연결을 만들며, 전 세계의 맛을 지역 시장 한 박스에 담아 전하는 것.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 3 -->
+  <section class="py-20 bg-[#f8f7f2]">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+      <div class="md:col-start-2 text-right font-korean">
+        <h2 class="font-playfair text-3xl text-[#3a5160] mb-4">현지에서 공수하고, 정성껏 큐레이션합니다</h2>
+        <p class="text-lg leading-relaxed">
+          우리는 영국 전역 최고의 시장 가판대에서 제품을 직접 고르고 있습니다. 모든 품목은 품질과 전통을 소중히 여기는 열정적인 독립 생산자들에게서 옵니다.<br><br>
+          우리는 단순히 상품을 담은 박스를 배송하는 것이 아니라, 시장의 전체 경험을 그대로 전하고자 합니다.<br><br>
+          각 박스에는 엄선된 고품질 제품뿐 아니라, 그 지역의 이야기와 시장의 역사, 여행 팁까지 담긴 소책자도 함께 포함되어 있습니다.<br><br>
+          단순한 음식이 아니라, 문화와 진심을 나누는 작은 영국의 조각을 전달하는 것.<br>
+          그것이 바로 Pikoro Market입니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3a5160] text-[#f8f7f2] py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-playfair font-bold mb-3">Pikoro Market</h4>
+        <p>현지 장인 음식으로 영국을 경험해보세요.</p>
+      </div>
+      <div>
+        <h4 class="font-playfair font-bold mb-3">Company</h4>
+        <ul>
+          <li><a href="about.html">회사 소개</a></li>
+          <li><a href="#">채용</a></li>
+          <li><a href="#">블로그</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-playfair font-bold mb-3">Help</h4>
+        <ul>
+          <li><a href="#">지원</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">배송</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-playfair font-bold mb-3">Follow Us</h4>
+        <div class="footer-social space-x-4">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
   </footer>
 </body>
 
