@@ -111,79 +111,66 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative h-[50vh] flex items-center justify-center text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=1974&auto=format&fit=crop'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 max-w-2xl px-6">
-      <h1 class="text-4xl sm:text-5xl font-playfair font-bold mb-4 leading-tight">어떻게 도와드릴까요?</h1>
-      <p class="text-lg font-korean">문의 유형을 선택하시거나 아래 양식을 작성해주세요.</p>
+  <!-- Main Content Section -->
+  <main class="grid grid-cols-1 md:grid-cols-2 min-h-[calc(100vh-100px)]">
+    <!-- Left Column: Image Placeholder -->
+    <div class="hidden md:block bg-gray-200 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000?q=80&w=1974&auto=format&fit=crop')">
+      <!-- This div is for the full-height image. You can replace the URL later. -->
     </div>
-  </section>
 
-  <!-- New Inquiry Section -->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-0 shadow-xl rounded-lg overflow-hidden bg-white">
-        
-        <!-- Left Column (Image Placeholder) -->
-        <div class="w-full min-h-[600px] bg-gray-200 flex items-center justify-center">
-          <!-- You can replace this div with an <img> tag or set a background-image -->
-          <p class="text-gray-500 font-semibold">Image Coming Soon</p>
+    <!-- Right Column: Inquiry Content -->
+    <div class="bg-white flex flex-col justify-center p-8 sm:p-12 md:p-16">
+      <div class="max-w-md mx-auto w-full">
+        <h1 class="font-playfair text-4xl md:text-5xl text-[#3a5160] mb-4">어떻게 도와드릴까요?</h1>
+        <p class="font-korean text-lg leading-relaxed mb-12">
+          문의 유형을 선택하시면, 양식을 작성하실 수 있습니다.
+        </p>
+  
+        <!-- Inquiry List -->
+        <div class="space-y-4 mb-16">
+          <a href="#contact-form" class="show-form-trigger flex items-center justify-between p-5 bg-[#f8f7f2] rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <div>
+              <h3 class="font-playfair text-xl text-[#3a5160]">고객 지원</h3>
+              <p class="font-korean text-sm text-gray-600">주문, 배송, 계정 관련 문의</p>
+            </div>
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="#contact-form" class="show-form-trigger flex items-center justify-between p-5 bg-[#f8f7f2] rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <div>
+              <h3 class="font-playfair text-xl text-[#3a5160]">콜라보레이션</h3>
+              <p class="font-korean text-sm text-gray-600">파트너십 관련 문의</p>
+            </div>
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="#contact-form" class="show-form-trigger flex items-center justify-between p-5 bg-[#f8f7f2] rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <div>
+              <h3 class="font-playfair text-xl text-[#3a5160]">언론 문의</h3>
+              <p class="font-korean text-sm text-gray-600">미디어 관련 문의</p>
+            </div>
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="#contact-form" class="show-form-trigger flex items-center justify-between p-5 bg-[#f8f7f2] rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <div>
+              <h3 class="font-playfair text-xl text-[#3a5160]">기업 선물 문의</h3>
+              <p class="font-korean text-sm text-gray-600">대량 주문 관련 문의</p>
+            </div>
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </div>
-    
-        <!-- Right Column (Content) -->
-        <div class="p-10 md:p-16 flex flex-col bg-[#f8f7f2]">
-          <h2 class="font-playfair text-3xl md:text-4xl text-[#3a5160] mb-4">어떻게 도와드릴까요?</h2>
-          <p class="font-korean text-lg leading-relaxed mb-10">
-            문의 유형을 선택하시거나, 일반 문의는 아래 버튼을 눌러 양식을 작성해주세요.
-          </p>
   
-          <!-- Inquiry List -->
-          <div class="space-y-4 flex-grow">
-            <a href="#contact-form" class="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-gray-100 transition-colors shadow-sm">
-              <div>
-                <h3 class="font-playfair text-lg text-[#3a5160]">고객 지원</h3>
-                <p class="font-korean text-sm">주문, 배송, 계정 관련 문의</p>
-              </div>
-              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        <!-- Submit a Request CTA -->
+        <div class="text-center">
+            <h3 class="font-playfair text-2xl font-bold mb-4">아직 도움이 필요하신가요?</h3>
+            <a href="#contact-form" class="show-form-trigger cta-button text-lg">
+                요청 제출하기
             </a>
-            <a href="#contact-form" class="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-gray-100 transition-colors shadow-sm">
-              <div>
-                <h3 class="font-playfair text-lg text-[#3a5160]">콜라보레이션</h3>
-                <p class="font-korean text-sm">파트너십 관련 문의</p>
-              </div>
-              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </a>
-            <a href="#contact-form" class="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-gray-100 transition-colors shadow-sm">
-              <div>
-                <h3 class="font-playfair text-lg text-[#3a5160]">언론 문의</h3>
-                <p class="font-korean text-sm">미디어 관련 문의</p>
-              </div>
-              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </a>
-            <a href="#contact-form" class="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-gray-100 transition-colors shadow-sm">
-              <div>
-                <h3 class="font-playfair text-lg text-[#3a5160]">기업 선물 문의</h3>
-                <p class="font-korean text-sm">대량 주문 관련 문의</p>
-              </div>
-              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </a>
-          </div>
-  
-          <!-- Submit a Request CTA -->
-          <div class="text-center pt-12 mt-auto">
-              <h3 class="font-playfair text-xl font-bold mb-4">아직 도움이 필요하신가요?</h3>
-              <a href="#contact-form" class="cta-button text-lg">
-                  요청 제출하기
-              </a>
-          </div>
         </div>
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- Contact Form Section -->
-  <section id="contact-form" class="py-20 bg-[#f8f7f2]">
+  <!-- Contact Form Section (Hidden by default) -->
+  <section id="contact-form" class="py-20 bg-[#f8f7f2] hidden">
     <div class="max-w-3xl mx-auto px-6">
       <h2 class="font-playfair text-3xl font-bold mb-8 text-center">문의 양식</h2>
       
@@ -257,6 +244,28 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const formSection = document.getElementById('contact-form');
+      const triggers = document.querySelectorAll('.show-form-trigger');
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevent the link from jumping to the anchor
+          
+          // Show the form if it's hidden
+          if (formSection.classList.contains('hidden')) {
+            formSection.classList.remove('hidden');
+          }
+          
+          // Smoothly scroll to the form
+          formSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
