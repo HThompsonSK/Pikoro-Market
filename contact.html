@@ -9,6 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Noto+Serif+KR&display=swap" rel="stylesheet" />
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: #f8f7f2;
       color: #3a3a3a;
@@ -116,43 +120,62 @@
     </div>
   </section>
 
-  <!-- Inquiry Types Section -->
+  <!-- New Inquiry Section -->
   <section class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Customer Support -->
-        <div class="bg-[#f8f7f2] p-8 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
-          <h3 class="font-playfair text-2xl text-[#3a5160] mb-3">고객 지원</h3>
-          <p class="font-korean mb-6">주문, 배송, 또는 계정에 대한 도움이 필요하신가요?</p>
-          <a href="#contact-form" class="font-bold text-[#a8c0d0] hover:text-[#8ba4b4]">문의하기 &rarr;</a>
-        </div>
-        <!-- Collaboration -->
-        <div class="bg-[#f8f7f2] p-8 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
-          <h3 class="font-playfair text-2xl text-[#3a5160] mb-3">콜라보레이션</h3>
-          <p class="font-korean mb-6">Pikoro Market과의 파트너십에 관심이 있으신가요?</p>
-          <a href="#contact-form" class="font-bold text-[#a8c0d0] hover:text-[#8ba4b4]">문의하기 &rarr;</a>
-        </div>
-        <!-- Press Inquiry -->
-        <div class="bg-[#f8f7f2] p-8 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
-          <h3 class="font-playfair text-2xl text-[#3a5160] mb-3">언론 문의</h3>
-          <p class="font-korean mb-6">언론 및 미디어 관련 문의 사항이 있으신가요?</p>
-          <a href="#contact-form" class="font-bold text-[#a8c0d0] hover:text-[#8ba4b4]">문의하기 &rarr;</a>
-        </div>
-        <!-- Corporate Gifting -->
-        <div class="bg-[#f8f7f2] p-8 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
-          <h3 class="font-playfair text-2xl text-[#3a5160] mb-3">기업 선물 문의</h3>
-          <p class="font-korean mb-6">팀이나 고객을 위한 대량 주문을 원하시나요?</p>
-          <a href="#contact-form" class="font-bold text-[#a8c0d0] hover:text-[#8ba4b4]">문의하기 &rarr;</a>
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      
+      <!-- Left Column (Image Placeholder & Title) -->
+      <div class="text-center md:text-left">
+        <h2 class="font-playfair text-3xl md:text-4xl text-[#3a5160] mb-4">문의가 있으신가요?</h2>
+        <p class="font-korean text-lg leading-relaxed mb-8">
+          오른쪽에서 문의 유형을 선택하시거나, 일반 문의는 아래 버튼을 눌러 양식을 작성해주세요.
+        </p>
+        <!-- Image Placeholder -->
+        <div class="w-full h-80 bg-gray-200 border-2 border-dashed border-gray-400 rounded-lg flex items-center justify-center">
+          <p class="text-gray-500 font-semibold">Image Coming Soon</p>
         </div>
       </div>
+  
+      <!-- Right Column (Inquiry Types) -->
+      <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Customer Support -->
+          <div class="bg-[#f8f7f2] p-6 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
+            <h3 class="font-playfair text-xl text-[#3a5160] mb-2">고객 지원</h3>
+            <p class="font-korean text-sm mb-4">주문, 배송, 계정 관련 문의</p>
+          </div>
+          <!-- Collaboration -->
+          <div class="bg-[#f8f7f2] p-6 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
+            <h3 class="font-playfair text-xl text-[#3a5160] mb-2">콜라보레이션</h3>
+            <p class="font-korean text-sm mb-4">파트너십 관련 문의</p>
+          </div>
+          <!-- Press Inquiry -->
+          <div class="bg-[#f8f7f2] p-6 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
+            <h3 class="font-playfair text-xl text-[#3a5160] mb-2">언론 문의</h3>
+            <p class="font-korean text-sm mb-4">미디어 관련 문의</p>
+          </div>
+          <!-- Corporate Gifting -->
+          <div class="bg-[#f8f7f2] p-6 rounded-lg text-center shadow-sm hover:shadow-lg transition-shadow">
+            <h3 class="font-playfair text-xl text-[#3a5160] mb-2">기업 선물 문의</h3>
+            <p class="font-korean text-sm mb-4">대량 주문 관련 문의</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Submit a Request CTA -->
+    <div class="text-center pt-20">
+        <h3 class="font-playfair text-2xl font-bold mb-4">아직 도움이 필요하신가요?</h3>
+        <a href="#contact-form" class="cta-button text-lg">
+            요청 제출하기
+        </a>
     </div>
   </section>
 
   <!-- Contact Form Section -->
   <section id="contact-form" class="py-20 bg-[#f8f7f2]">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="font-playfair text-3xl font-bold mb-4">아직 도움이 필요하신가요?</h2>
-      <p class="font-korean text-lg mb-8">아래 양식을 통해 문의사항을 보내주시면 신속하게 답변드리겠습니다.</p>
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-playfair text-3xl font-bold mb-8 text-center">문의 양식</h2>
       
       <!-- 
         IMPORTANT: To make this form work, you need to:
